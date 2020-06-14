@@ -16,40 +16,26 @@ h1{
 	text-align: center;
 }
 
-.c1{
+ .ibox{
 	border: 1px solid black;
-	margin-left: 85%;
-	top: 0;
-	width: 18%;
+	margin-left: 70%;
 	text-align: center;
-	background-color: maroon;
 	position: relative;
 	border-spacing: 1px;
+	margin-bottom: 1%;
+}
 
+.c1{
+	background-color: maroon;
+	text-align: center;
 
 
 }
 .c2{
-	border: 1px solid black;
-	margin-left: 85%;
-	top: 0;
-	width: 18%;
-	text-align: center;
 	background-color: green;
-	position: relative;
-	border-spacing: 1px;
-
 }
 .c3{
-	border: 1px solid black;
-	margin-left: 85%;
-	top: 0;
-	width: 18%;
-	text-align: center;
 	background-color: orange;
-	position: relative;
-	border-spacing: 1px;
-
 	}
 
 .b1,.b2,.b3{
@@ -60,6 +46,8 @@ h1{
 	height: auto;
 	float:center;
 	padding:1%;
+	padding-top:0;
+	padding-right:0;
 	margin:1%;
 }
 
@@ -74,26 +62,54 @@ p{
 
 .row{
 	width: 100%;
+	padding:2%;
 }
 
 
-
-@media (min-width: 950px) and (max-width: 1199px){
+@media (min-width: 760px) and (max-width: 950px)
+{
 	.b1,.b2,.b3{
 		float: left;
-		border: 5px solid green;
-		background-color: gray;
+	border: 1px solid black;
+	overflow-wrap: break-word;
+	overflow: auto;
 	}
+	
+	.b1,.b2,.b3{
+		width: 30%;
+	}
+}
+
+@media (min-width: 470px) and (max-width: 750px)
+{
+	.b1,.b2,.b3{
+		float: left;
+	border: 1px solid black;
+	}
+	
+	.b1,.b2{
+		width: 40%;
+	}
+	.b3{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 460px){
+	.b1,.b2,.b3{
+		float: left;
+	border: 1px solid black;
+	}
+	
 	.b1{
-		width: 10%;
+		width: 100%;
 	}
 	.b2{
-		width: 12%;
+		width: 100%;
 	}
 	.b3
 	{
-		width: 10%;
+		width: 100%;
 	}
 }
-
-	
